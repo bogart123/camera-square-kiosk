@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_rounded_corner"
+    tools:ignore="ResourceName">
+
+   <TextView
+        android:id="@+id/title_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Delete Photo"
+       android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/confirm_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/title_lbl"
+        android:text="Are you sure you want to delete it ?"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_below="@+id/confirm_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_below="@+id/divider"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btnNo"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:background="@android:color/white"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btnYes"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:background="@android:color/white"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

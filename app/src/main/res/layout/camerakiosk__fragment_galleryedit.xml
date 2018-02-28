@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".EditSavePhotoFragment">
+
+    <View
+        android:id="@+id/gallery_topview"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <fimobile.technology.inc.CameraKiosk.SquareImageView
+        android:id="@+id/gallery_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/gallery_topview"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+     <!--   <ImageButton
+            android:id="@+id/save_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/squarecamera__save_photo_drawable"
+            android:background="@android:color/transparent"
+            />-->
+
+
+        <ImageButton
+            android:id="@+id/gallery_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:onClick="onShare"
+            android:src="@drawable/camerakiosk_share"
+            android:background="@android:color/transparent"
+            tools:ignore="OnClick" />
+
+        <ImageButton
+            android:id="@+id/gallery_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/camerakiosk_edit"
+            android:background="@android:color/transparent"
+            android:onClick="onEdit"
+            tools:ignore="OnClick" />
+
+
+        <ImageButton
+            android:id="@+id/gallery_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/camerakiosk_delete"
+            android:background="@android:color/transparent"
+            android:onClick="onDeleteGallery"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+
+
+
+    <ImageButton
+        android:id="@+id/cancel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/camerakiosk_back_selected"
+        android:background="@android:color/transparent"
+        android:onClick="onCancel"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>
