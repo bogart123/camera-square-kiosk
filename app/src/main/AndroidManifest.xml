@@ -4,6 +4,7 @@
 
 
     <supports-screens android:xlargeScreens="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:anyDensity="true"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.CAMERA" />
@@ -21,7 +22,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         >
-        <activity android:name=".CameraActivity"
+        <activity android:name=".TestMainActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:clearTaskOnLaunch="true">
@@ -33,14 +34,14 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".RuntimePermissionActivity"
+       <!-- <activity android:name=".RuntimePermissionActivity"
             >
         </activity>
         <receiver android:name="fimobile.technology.inc.CameraKiosk.BootReceiver">
             <intent-filter >
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
-        </receiver>
+        </receiver>-->
         <service android:name="fimobile.technology.inc.CameraKiosk.KioskService" android:exported="false"/>
     </application>
 

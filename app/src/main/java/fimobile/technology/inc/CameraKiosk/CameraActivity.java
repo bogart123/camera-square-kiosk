@@ -1,18 +1,24 @@
 package fimobile.technology.inc.CameraKiosk;
 
 import android.app.Activity;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.PixelFormat;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+
+import com.serenegiant.usb.USBMonitor;
+import com.serenegiant.usbcameracommon.UVCCameraHandler;
+import com.serenegiant.widget.CameraViewInterface;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -29,6 +35,10 @@ public class CameraActivity extends AppCompatActivity {
     public static final int STORAGE_PERMISSION_REQUEST = 5;
     private static final int REQUEST_CAMERA_PERMISSION = 1;
 
+    private USBMonitor mUSBMonitor;
+    private UVCCameraHandler mCameraHandler;
+    private CameraViewInterface mUVCCameraView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +46,7 @@ public class CameraActivity extends AppCompatActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+//        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
         setContentView(R.layout.camerakiosk_camera);
 
         PrefUtils.setKioskModeActive(true, getApplicationContext());
@@ -43,6 +54,7 @@ public class CameraActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction().replace(R.id.fragment_container, CameraFragment.newInstance()).commit();
         }
+
     }
 
     public void returnPhotoUri(Uri uri) {
@@ -54,12 +66,23 @@ public class CameraActivity extends AppCompatActivity {
         } else {
             getParent().setResult(RESULT_OK, data);
         }
-
-        finish();
+//        finish();
+        FragmentManager fm= getFragmentManager();
+        fm.popBackStack();
     }
 
-    public void onCancel(View view) {
-        getSupportFragmentManager().popBackStack();
+    public void onCancel(View view)
+    {
+        Log.d(TAG, " oncancel ");
+//        getSupportFragmentManager().popBackStack();
+        FragmentManager fm= getFragmentManager();
+        fm.popBackStack();
+    }
+
+    public void onEdit (View view)
+    {
+        Log.d(TAG, "onEdit");
+
     }
 
     @Override
@@ -76,6 +99,10 @@ public class CameraActivity extends AppCompatActivity {
     public void onBackPressed() {
         // nothing to do here
         // … really
+        Log.d(TAG, " onbackpressed ");
+//        getSupportFragmentManager().popBackStack();
+        FragmentManager fm= getFragmentManager();
+        fm.popBackStack();
     }
 
     @Override

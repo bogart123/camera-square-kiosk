@@ -22,6 +22,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import java.io.ByteArrayOutputStream;
@@ -35,7 +36,7 @@ import java.util.Date;
 /**
  *
  */
-public class EditSavePhotoFragment extends Fragment {
+public class EditSavePhotoFragment extends Fragment implements View.OnClickListener {
 
     public static final String TAG = EditSavePhotoFragment.class.getSimpleName();
     public static final String BITMAP_KEY = "bitmap_byte_array";
@@ -45,14 +46,18 @@ public class EditSavePhotoFragment extends Fragment {
     private static final int REQUEST_STORAGE = 1;
     private static final int REQUEST_SHARE_IMAGE = 2;
 
-    public static Fragment newInstance(byte[] bitmapByteArray, int rotation,
-                                       @NonNull ImageParameters parameters) {
+    private ImageButton backBtn;
+
+    public static Fragment newInstance(Bitmap bitmapByteArray) {
         Fragment fragment = new EditSavePhotoFragment();
 
         Bundle args = new Bundle();
-        args.putByteArray(BITMAP_KEY, bitmapByteArray);
-        args.putInt(ROTATION_KEY, rotation);
-        args.putParcelable(IMAGE_INFO, parameters);
+        // lagyan ng pang kuha sa bitmap
+
+        args.putParcelable("bitmap", bitmapByteArray);
+//        args.putByteArray(BITMAP_KEY, bitmapByteArray);
+//        args.putInt(ROTATION_KEY, rotation);
+//        args.putParcelable(IMAGE_INFO, parameters);
 
         fragment.setArguments(args);
         return fragment;
@@ -62,6 +67,7 @@ public class EditSavePhotoFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRetainInstance(true);
+        Log.d(TAG, " oncreate ");
     }
 
     public EditSavePhotoFragment() {}
@@ -69,34 +75,38 @@ public class EditSavePhotoFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.camerakiosk__fragment_edit_save_photo, container, false);
+        View v = inflater.inflate(R.layout.camerakiosk__fragment_edit_save_photo, container, false);
+
+        backBtn = (ImageButton) v.findViewById(R.id.cancel);
+        backBtn.setOnClickListener(this);
+        return v;
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        int rotation = getArguments().getInt(ROTATION_KEY);
-        byte[] data = getArguments().getByteArray(BITMAP_KEY);
-        ImageParameters imageParameters = getArguments().getParcelable(IMAGE_INFO);
-
-        if (imageParameters == null) {
-            return;
-        }
+//        int rotation = getArguments().getInt(ROTATION_KEY);
+//        byte[] data = getArguments().getByteArray(BITMAP_KEY);
+        Bitmap imgBitmap = getArguments().getParcelable("bitmap");
+//
+//        if (imageParameters == null) {
+//            return;
+//        }
 
         final ImageView photoImageView = (ImageView) view.findViewById(R.id.photo);
 
-        imageParameters.mIsPortrait =
-                getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT;
+//        imageParameters.mIsPortrait =
+//                getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT;
+//
+//        final View topView = view.findViewById(R.id.topView);
+//        if (imageParameters.mIsPortrait) {
+//            topView.getLayoutParams().height = imageParameters.mCoverHeight;
+//        } else {
+//            topView.getLayoutParams().width = imageParameters.mCoverWidth;
+//        }
 
-        final View topView = view.findViewById(R.id.topView);
-        if (imageParameters.mIsPortrait) {
-            topView.getLayoutParams().height = imageParameters.mCoverHeight;
-        } else {
-            topView.getLayoutParams().width = imageParameters.mCoverWidth;
-        }
-
-        rotatePicture(rotation, data, photoImageView);
+        rotatePicture(imgBitmap, photoImageView);
 
         view.findViewById(R.id.share).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -178,25 +188,45 @@ public class EditSavePhotoFragment extends Fragment {
 
     }
 
-    private void rotatePicture(int rotation, byte[] data, ImageView photoImageView) {
-        Bitmap bitmap = ImageUtility.decodeSampledBitmapFromByte(getActivity(), data);
-        Log.d(TAG, "original bitmap width " + bitmap.getWidth() + " height " + bitmap.getHeight());
-        if (rotation != 0) {
-            Bitmap oldBitmap = bitmap;
-
-            Matrix matrix = new Matrix();
-            matrix.postRotate(rotation);
-            matrix.preScale(-1.0f, 1.0f);
-
-            bitmap = Bitmap.createBitmap(
-                    oldBitmap, 0, 0, oldBitmap.getWidth(), oldBitmap.getHeight(), matrix, false
-            );
-
-            oldBitmap.recycle();
-        }
+    private void rotatePicture(Bitmap bitmap, ImageView photoImageView) {
+//        Bitmap bitmap = ImageUtility.decodeSampledBitmapFromByte(getActivity(), data);
+//        Log.d(TAG, "original bitmap width " + bitmap.getWidth() + " height " + bitmap.getHeight());
+//        if (rotation != 0) {
+//            Bitmap oldBitmap = bitmap;
+//
+//            Matrix matrix = new Matrix();
+//            matrix.postRotate(rotation);
+//            matrix.preScale(-1.0f, 1.0f);
+//
+//            bitmap = Bitmap.createBitmap(
+//                    oldBitmap, 0, 0, oldBitmap.getWidth(), oldBitmap.getHeight(), matrix, false
+//            );
+//
+//            oldBitmap.recycle();
+//        }
 
         photoImageView.setImageBitmap(bitmap);
     }
+
+//    private void rotatePicture(byte[] data, ImageView photoImageView) {
+//        Bitmap bitmap = ImageUtility.decodeSampledBitmapFromByte(getActivity(), data);
+//        Log.d(TAG, "original bitmap width " + bitmap.getWidth() + " height " + bitmap.getHeight());
+////        if (rotation != 0) {
+////            Bitmap oldBitmap = bitmap;
+////
+////            Matrix matrix = new Matrix();
+////            matrix.postRotate(rotation);
+////            matrix.preScale(-1.0f, 1.0f);
+////
+////            bitmap = Bitmap.createBitmap(
+////                    oldBitmap, 0, 0, oldBitmap.getWidth(), oldBitmap.getHeight(), matrix, false
+////            );
+////
+////            oldBitmap.recycle();
+////        }
+//
+//        photoImageView.setImageBitmap(bitmap);
+//    }
 
     private void savePicture() {
         requestForPermission();
@@ -223,13 +253,21 @@ public class EditSavePhotoFragment extends Fragment {
                 Uri photoUri = ImageUtility.savePicture(getActivity(), bitmap);
                 Log.d(TAG, "photoURI"+ photoUri);
 
-                ((CameraActivity) getActivity()).returnPhotoUri(photoUri);
+//                ((TestMainActivity) getActivity()).returnPhotoUri(photoUri);
             }
+
         } else if (REQUEST_SHARE_IMAGE == requestCode && data != null){
            Log.d(TAG, "im here!");
         } else {
             super.onActivityResult(requestCode, resultCode, data);
             Log.d(TAG, "photoURIsave" );
         }
+    }
+
+
+    @Override
+    public void onClick(View v) {
+        Log.d(TAG, "backback" );
+        getFragmentManager().beginTransaction().remove(this).commit();
     }
 }
