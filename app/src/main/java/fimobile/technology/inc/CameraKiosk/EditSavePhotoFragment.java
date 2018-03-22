@@ -47,14 +47,18 @@ public class EditSavePhotoFragment extends Fragment implements View.OnClickListe
     private static final int REQUEST_SHARE_IMAGE = 2;
 
     private ImageButton backBtn;
+    private TestMainActivity mainActivity;
+    private static String imgBitmap;
+    private ImageView photoImageView;
+    private Bitmap myBitmap;
 
-    public static Fragment newInstance(Bitmap bitmapByteArray) {
+    public static Fragment newInstance(String bitmap) {
         Fragment fragment = new EditSavePhotoFragment();
 
         Bundle args = new Bundle();
         // lagyan ng pang kuha sa bitmap
 
-        args.putParcelable("bitmap", bitmapByteArray);
+        args.putString("bitmap", bitmap);
 //        args.putByteArray(BITMAP_KEY, bitmapByteArray);
 //        args.putInt(ROTATION_KEY, rotation);
 //        args.putParcelable(IMAGE_INFO, parameters);
@@ -88,25 +92,18 @@ public class EditSavePhotoFragment extends Fragment implements View.OnClickListe
 
 //        int rotation = getArguments().getInt(ROTATION_KEY);
 //        byte[] data = getArguments().getByteArray(BITMAP_KEY);
-        Bitmap imgBitmap = getArguments().getParcelable("bitmap");
-//
-//        if (imageParameters == null) {
-//            return;
-//        }
+        imgBitmap = getArguments().getString("bitmap");
+        Log.d(TAG, "imgBitmap " + imgBitmap);
 
-        final ImageView photoImageView = (ImageView) view.findViewById(R.id.photo);
+        photoImageView = (ImageView) view.findViewById(R.id.photo);
 
-//        imageParameters.mIsPortrait =
-//                getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT;
-//
-//        final View topView = view.findViewById(R.id.topView);
-//        if (imageParameters.mIsPortrait) {
-//            topView.getLayoutParams().height = imageParameters.mCoverHeight;
-//        } else {
-//            topView.getLayoutParams().width = imageParameters.mCoverWidth;
-//        }
+        File file = new File(imgBitmap);
 
-        rotatePicture(imgBitmap, photoImageView);
+        if(file.exists()){
+            myBitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
+            photoImageView.setImageBitmap(myBitmap);
+        }
+
 
         view.findViewById(R.id.share).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -116,12 +113,12 @@ public class EditSavePhotoFragment extends Fragment implements View.OnClickListe
             }
         });
 
-        view.findViewById(R.id.save_photo).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                savePicture();
-            }
-        });
+//        view.findViewById(R.id.save_photo).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                savePicture();
+//            }
+//        });
     }
 
     private void shareImage() {
@@ -179,6 +176,7 @@ public class EditSavePhotoFragment extends Fragment implements View.OnClickListe
         String paths = mediaStorageDir.getPath() + File.separator + "IMG_" + timeStamp + ".jpg";
         //String paths = "storage/emulated/0/Picture/SquareCamera/IMG_20180222_114056.jpg";
         File file = new File(paths);
+
         Log.d(TAG, "FILEPATHFILE" + file);
         Uri uri = Uri.fromFile(file);
         Intent intent = new Intent(Intent.ACTION_SEND);
@@ -269,5 +267,16 @@ public class EditSavePhotoFragment extends Fragment implements View.OnClickListe
     public void onClick(View v) {
         Log.d(TAG, "backback" );
         getFragmentManager().beginTransaction().remove(this).commit();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy" );
+        if(myBitmap !=null){
+            myBitmap.recycle();
+            myBitmap = null;
+        }
+
     }
 }

@@ -13,8 +13,6 @@
         android:orientation="horizontal"
         android:layout_height="60dp">
 
-
-
     </LinearLayout>
 
     <LinearLayout
@@ -27,13 +25,9 @@
         <com.serenegiant.widget.UVCCameraTextureView
             android:id="@+id/camera_view"
             android:layout_width="match_parent"
-            android:layout_height="400dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:text="asdasd"
-            android:textColor="@android:color/black"
             android:layout_height="wrap_content" />
+
+
 
     </LinearLayout>
 
@@ -67,8 +61,6 @@
             android:background="@android:color/transparent"
             />
 
-
-
         <!--<ImageButton-->
             <!--android:id="@+id/edit"-->
             <!--android:layout_width="wrap_content"-->
@@ -86,6 +78,7 @@
         android:id="@+id/camera_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="invisible"
         android:text="ToggleButton"/>
 
 </RelativeLayout>

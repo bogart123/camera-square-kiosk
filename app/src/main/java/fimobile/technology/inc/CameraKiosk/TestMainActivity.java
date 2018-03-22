@@ -32,6 +32,8 @@ import com.serenegiant.widget.CameraViewInterface;
 
 import java.util.List;
 
+import static android.graphics.Bitmap.Config.ARGB_8888;
+
 /**
  * Created by FM-JMK on 08/03/2018.
  */
@@ -66,7 +68,7 @@ public class TestMainActivity extends BaseActivity implements CameraDialog.Camer
      * if your camera does not support specific resolution and mode,
      * {@link UVCCamera#setPreviewSize(int, int, int)} throw exception
      */
-    private static final int PREVIEW_HEIGHT = 480;
+    private static final int PREVIEW_HEIGHT = 640;
     /**
      * preview mode
      * if your camera does not support specific resolution and mode,
@@ -82,6 +84,7 @@ public class TestMainActivity extends BaseActivity implements CameraDialog.Camer
     boolean isFirstRun = false;
     private ImageParameters mImageParameters;
 
+    private static String newBmp = "bitmap";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,6 +105,7 @@ public class TestMainActivity extends BaseActivity implements CameraDialog.Camer
         camera_button = (ToggleButton) findViewById(R.id.camera_button);
         camera_button.setOnCheckedChangeListener(mOnCheckedChangeListener);
 
+        checkPermissionWriteExternalStorage();
 
 
     }
@@ -111,6 +115,13 @@ public class TestMainActivity extends BaseActivity implements CameraDialog.Camer
         public void onAttach(final UsbDevice device) {
             Toast.makeText(TestMainActivity.this, "USB_DEVICE_ATTACHED", Toast.LENGTH_SHORT).show();
 
+            if (!mCameraHandler.isOpened() ) {
+                Log.d(TAG, " isopened ");
+                CameraDialog.showDialog(TestMainActivity.this);
+            } else {
+                mCameraHandler.close();
+                Log.d(TAG, " isopened not");
+            }
 
         }
 
@@ -153,12 +164,6 @@ public class TestMainActivity extends BaseActivity implements CameraDialog.Camer
         Log.d(TAG, "startPreview");
         final SurfaceTexture st = mUVCCameraView.getSurfaceTexture();
         mCameraHandler.startPreview(new Surface(st));
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-//                mCaptureButton.setVisibility(View.VISIBLE);
-            }
-        });
         updateItems();
     }
 
@@ -186,7 +191,6 @@ public class TestMainActivity extends BaseActivity implements CameraDialog.Camer
     }
 
     private void updateBitmap(){
-//        runOnUiThread(mUpdateBitmapOnUITask, 10);
         new bitmapTask().execute("");
 
     }
@@ -216,50 +220,18 @@ public class TestMainActivity extends BaseActivity implements CameraDialog.Camer
         public void run() {
             if (isFinishing()) return;
             final int visible_active = isActive() ? View.VISIBLE : View.INVISIBLE;
-//            mToolsLayout.setVisibility(visible_active);
-//            mBrightnessButton.setVisibility(checkSupportFlag(UVCCamera.PU_BRIGHTNESS)
-//                            ? visible_active : View.INVISIBLE);
-//            mContrastButton.setVisibility(checkSupportFlag(UVCCamera.PU_CONTRAST)
-//                            ? visible_active : View.INVISIBLE);
         }
     };
-
-    private final Runnable mUpdateBitmapOnUITask = new Runnable() {
-        @Override
-        public void run() {
-//            Bitmap bitmap = mCameraHandler.getBitmap();
-//            Log.d(TAG, " bitmap " + bitmap );
-//            if(bitmap != null){
-//                Log.d(TAG, " bitmap 1 " + bitmap );
-//
-////                Fragment newFragment = new EditSavePhotoFragment();
-//                FragmentTransaction ft = getFragmentManager().beginTransaction();
-//                ft.add(android.R.id.content, EditSavePhotoFragment.newInstance(bitmap)).commit();
-//            }
-        }
-    };
-
-
-
 
     @Override
     public void onClick(View v) {
         Log.d(TAG, " onclick ");
         if (mCameraHandler.isOpened()) {
-            if (checkPermissionWriteExternalStorage()) {
-                mCameraHandler.captureStill();
-                updateBitmap();
-//                Bitmap bitmap = mCameraHandler.getBitmap();
-//                Log.d(TAG, " bitmap 1 " + mCameraHandler.getBitmap( ) + " mCameraHandler " + mCameraHandler);
-
-//                Fragment newFragment = new EditSavePhotoFragment();
-//                FragmentTransaction ft = getFragmentManager().beginTransaction();
-//                ft.add(android.R.id.content, EditSavePhotoFragment.newInstance(bitmap)).commit();
-            }
-//            return true;
+//            save_photo.setEnabled(false);
+//            save_photo.setClickable(false);
+            mCameraHandler.captureStill();
+            updateBitmap();
         }
-
-
     }
 
     private final CompoundButton.OnCheckedChangeListener mOnCheckedChangeListener
@@ -294,7 +266,7 @@ public class TestMainActivity extends BaseActivity implements CameraDialog.Camer
     @Override
     protected void onStop() {
 //		if (DEBUG)
-        Log.v(TAG, "onStop:");
+        Log.v(TAG, "una onStop:");
         mCameraHandler.close();
         if (mUVCCameraView != null)
             mUVCCameraView.onPause();
@@ -305,7 +277,7 @@ public class TestMainActivity extends BaseActivity implements CameraDialog.Camer
     @Override
     public void onDestroy() {
 //		if (DEBUG)
-        Log.v(TAG, "onDestroy:");
+        Log.v(TAG, "una onDestroy:");
         if (mCameraHandler != null) {
             mCameraHandler.release();
             mCameraHandler = null;
@@ -317,87 +289,79 @@ public class TestMainActivity extends BaseActivity implements CameraDialog.Camer
         mUVCCameraView = null;
 //        mCameraButton = null;
 //        mCaptureButton = null;
+
         super.onDestroy();
     }
 
-    public void returnPhotoUri() {
-//        Intent data = new Intent();
-//        data.setData(uri);
-
-//        if (getParent() == null) {
-//            setResult(RESULT_OK, data);
-//        } else {
-//            getParent().setResult(RESULT_OK, data);
-//        }
-////        finish();
-//        FragmentManager fm= getFragmentManager();
-//        fm.popBackStack();
-    }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d(TAG, "una onresume ");
-
-        mUSBMonitor.register();
-        SharedPreferences prefs = getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE);
-//        String restoredText = prefs.getString("text", null);
-//        if (restoredText != null) {
-//            boolean name = prefs.getBoolean("name", true);//"No name defined" is the default value.
-////            int idName = prefs.getInt("idName", 0); //0 is the default value.
-//        }
-
-                Log.d(TAG, " mUSBMonitor: " + mUSBMonitor);
-            if (!mCameraHandler.isOpened() ) {
-                boolean permit = prefs.getBoolean("name", false);
-                Log.d(TAG, " isopened: " + permit);
-                if(!permit)
-                {
-                    Log.d(TAG, " isopened ");
-                    CameraDialog.showDialog(TestMainActivity.this);
-                }
-
-            } else {
-                mCameraHandler.close();
-                Log.d(TAG, " isopened not");
-//                setCameraButton(false);
-            }
-
+        Log.d(TAG, "una onresume " + save_photo.isEnabled()  );
+//        updateItems();
+//        save_photo.setVisibility(View.VISIBLE);
+        save_photo.setEnabled(true);
+        save_photo.setClickable(true);
     }
 
-    private class bitmapTask extends AsyncTask<String, Void, String> {
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(TAG, "una onpause " + save_photo.isEnabled());
+        save_photo.setEnabled(false);
+        save_photo.setClickable(false);
+    }
+
+    private class bitmapTask extends AsyncTask<String, Void, String>
+    {
 
         @Override
-        protected void onPreExecute() {
+        protected void onPreExecute()
+        {
+            Log.d(TAG, " onpreexecute");
             super.onPreExecute();
         }
 
         @Override
         protected String doInBackground(String... strings) {
-            Bitmap bitmap = null;
-            while (bitmap == null){
-                bitmap = mCameraHandler.getBitmap();
-                Log.d(TAG, " bitmap " + bitmap);
+            String oldBmp = null;
+            while (oldBmp == null){
+                oldBmp = mCameraHandler.getBitmap();
+                Log.d(TAG,"newBmp 111 " + oldBmp);
+                Log.d(TAG,"newBmp 11 " + newBmp);
+                if(oldBmp !=null ){
+                       Log.d(TAG,"newBmp 44 " + newBmp);
+                    if(!newBmp.equals(oldBmp)){
+                        newBmp = oldBmp;
+                        Log.d(TAG,"newBmp 121 " + newBmp);
+                    }else{
+                        Log.d(TAG,"newBmp 22 " + newBmp);
+                        oldBmp = null;
+                    }
+                }
+//                oldBmp = newBmp;
+                Log.d(TAG,"newBmp 33 " + oldBmp);
             }
-                FragmentTransaction ft = getFragmentManager().beginTransaction();
-                ft.add(android.R.id.content, EditSavePhotoFragment.newInstance(bitmap)).commit();
-            return null;
+            return newBmp;
         }
 
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-            save_photo.setVisibility(View.GONE);
+            if(newBmp.equals(s)){
+                Log.d(TAG,"newBmp 44 " + newBmp);
+                FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.add(android.R.id.content, EditSavePhotoFragment.newInstance(newBmp)).commit();
+            }
+
         }
     }
 
-//    public void onCancel(View view)
-//    {
-//        Log.d(TAG, " oncancel22 ");
-////        getSupportFragmentManager().popBackStack();
-//        FragmentManager fm= getFragmentManager();
-////        fm.popBackStack();
-//
-//
-//    }
+    public void onEdit (View view)
+    {
+        Log.d(TAG, "onEdit");
+        Toast.makeText(this, " edit napindot mo", Toast.LENGTH_SHORT).show();
+
+    }
+
 }

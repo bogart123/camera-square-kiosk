@@ -79,11 +79,7 @@ public class CameraActivity extends AppCompatActivity {
         fm.popBackStack();
     }
 
-    public void onEdit (View view)
-    {
-        Log.d(TAG, "onEdit");
 
-    }
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
