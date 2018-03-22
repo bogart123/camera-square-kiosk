@@ -70,7 +70,7 @@ abstract class AbstractUVCCameraHandler extends Handler {
 	private static final boolean DEBUG = true;	// TODO set false on release
 	private static final String TAG = "AbsUVCCameraHandler";
 	private static final int PREVIEW_SIZE_MAX_WIDTH = 640;
-	private static Bitmap mBitmap;
+	private static String mBitmap;
 
 	public interface CameraCallback {
 		public void onOpen();
@@ -197,7 +197,7 @@ abstract class AbstractUVCCameraHandler extends Handler {
 		if (DEBUG) Log.v(TAG, "stopPreview:finished");
 	}
 
-	protected Bitmap getBitmap(){
+	protected String getBitmap(){
 		return mBitmap;
 	}
 
@@ -563,31 +563,32 @@ abstract class AbstractUVCCameraHandler extends Handler {
 			try {
 				final Bitmap bitmap = mWeakCameraView.get().captureStillImage();
 				Log.d(TAG, " bitmap 2 " + bitmap);
-				setBitmap(bitmap);
+
 				// get buffered output stream for saving a captured still image as a file on external storage.
 				// the file name is came from current time.
 				// You should use extension name as same as CompressFormat when calling Bitmap#compress.
-//				final File outputFile = TextUtils.isEmpty(path)
-//					? MediaMuxerWrapper.getCaptureFile(Environment.DIRECTORY_DCIM, ".png")
-//					: new File(path);
-//				final BufferedOutputStream os = new BufferedOutputStream(new FileOutputStream(outputFile));
-//				try {
-//					try {
-//						bitmap.compress(Bitmap.CompressFormat.PNG, 100, os);
-//						os.flush();
-//						mHandler.sendMessage(mHandler.obtainMessage(MSG_MEDIA_UPDATE, outputFile.getPath()));
-//					} catch (final IOException e) {
-//					}
-//				} finally {
-//					os.close();
-//				}
+				final File outputFile = TextUtils.isEmpty(path)
+					? MediaMuxerWrapper.getCaptureFile(Environment.DIRECTORY_DCIM, ".png")
+					: new File(path);
+				final BufferedOutputStream os = new BufferedOutputStream(new FileOutputStream(outputFile));
+				try {
+					try {
+						bitmap.compress(Bitmap.CompressFormat.PNG, 100, os);
+						os.flush();
+						setBitmap(outputFile.getPath());
+						mHandler.sendMessage(mHandler.obtainMessage(MSG_MEDIA_UPDATE, outputFile.getPath()));
+					} catch (final IOException e) {
+					}
+				} finally {
+					os.close();
+				}
 
 			} catch (final Exception e) {
 				callOnError(e);
 			}
 		}
 
-		private void setBitmap(Bitmap bitmap) {
+		private void setBitmap(String bitmap) {
 			Log.d(TAG, " bitmap 8 " );
 			mBitmap = bitmap;
 		}
@@ -669,7 +670,8 @@ abstract class AbstractUVCCameraHandler extends Handler {
 		};
 
 		public void handleUpdateMedia(final String path) {
-			if (DEBUG) Log.v(TAG_THREAD, "handleUpdateMedia:path=" + path);
+//			if (DEBUG)
+				Log.v(TAG_THREAD, "handleUpdateMedia:path=" + path);
 			final Activity parent = mWeakParent.get();
 			final boolean released = (mHandler == null) || mHandler.mReleased;
 			if (parent != null && parent.getApplicationContext() != null) {

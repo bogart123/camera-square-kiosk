@@ -138,7 +138,7 @@ public class UVCCameraHandler extends AbstractUVCCameraHandler {
 	}
 
 	@Override
-	public Bitmap getBitmap() {
+	public String getBitmap() {
 		Log.d(TAG, " bitmap 7 " );
 		return super.getBitmap();
 	}
