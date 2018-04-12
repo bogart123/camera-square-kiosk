@@ -32,13 +32,19 @@ import com.serenegiant.widget.CameraViewInterface;
 
 import java.util.List;
 
+import fimobile.technology.inc.CameraKiosk.imageeditor.EditImageActivity;
+import fimobile.technology.inc.CameraKiosk.photoeditor.OnPhotoEditorListener;
+import fimobile.technology.inc.CameraKiosk.photoeditor.PhotoEditor;
+import fimobile.technology.inc.CameraKiosk.photoeditor.PhotoEditorView;
+import fimobile.technology.inc.CameraKiosk.photoeditor.ViewType;
+
 import static android.graphics.Bitmap.Config.ARGB_8888;
 
 /**
  * Created by FM-JMK on 08/03/2018.
  */
 
-public class TestMainActivity extends BaseActivity implements CameraDialog.CameraDialogParent, View.OnClickListener {
+public class TestMainActivity extends BaseActivity implements CameraDialog.CameraDialogParent, View.OnClickListener, OnPhotoEditorListener {
 
     private static final String TAG = "TestMainActivity";
     public static final String MY_PREFS_NAME = "MyPrefsFile";
@@ -85,6 +91,9 @@ public class TestMainActivity extends BaseActivity implements CameraDialog.Camer
     private ImageParameters mImageParameters;
 
     private static String newBmp = "bitmap";
+    private PhotoEditorView mPhotoEditorView;
+    private PhotoEditor mPhotoEditor;
+    String oldBmp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,6 +115,20 @@ public class TestMainActivity extends BaseActivity implements CameraDialog.Camer
         camera_button.setOnCheckedChangeListener(mOnCheckedChangeListener);
 
         checkPermissionWriteExternalStorage();
+
+//        Intent intent = getIntent();
+//        value = intent.getStringExtra("key"); //if it's a string you stored.
+
+
+//        mPhotoEditorView = findViewById(R.id.photoEditorView);
+//
+//        mPhotoEditor = new PhotoEditor.Builder(this, mPhotoEditorView)
+//                .setPinchTextScalable(true) // set flag to make text scalable when pinch
+//                //.setDefaultTextTypeface(mTextRobotoTf)
+//                //.setDefaultEmojiTypeface(mEmojiTypeFace)
+//                .build(); // build photo editor sdk
+//
+//        mPhotoEditor.setOnPhotoEditorListener(this);
 
 
     }
@@ -297,9 +320,12 @@ public class TestMainActivity extends BaseActivity implements CameraDialog.Camer
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d(TAG, "una onresume " + save_photo.isEnabled()  );
+        Log.d(TAG, "una onresume " );
 //        updateItems();
 //        save_photo.setVisibility(View.VISIBLE);
+
+
+
         save_photo.setEnabled(true);
         save_photo.setClickable(true);
     }
@@ -310,6 +336,31 @@ public class TestMainActivity extends BaseActivity implements CameraDialog.Camer
         Log.d(TAG, "una onpause " + save_photo.isEnabled());
         save_photo.setEnabled(false);
         save_photo.setClickable(false);
+    }
+
+    @Override
+    public void onEditTextChangeListener(View rootView, String text, int colorCode) {
+
+    }
+
+    @Override
+    public void onAddViewListener(ViewType viewType, int numberOfAddedViews) {
+
+    }
+
+    @Override
+    public void onRemoveViewListener(int numberOfAddedViews) {
+
+    }
+
+    @Override
+    public void onStartViewChangeListener(ViewType viewType) {
+
+    }
+
+    @Override
+    public void onStopViewChangeListener(ViewType viewType) {
+
     }
 
     private class bitmapTask extends AsyncTask<String, Void, String>
@@ -324,23 +375,23 @@ public class TestMainActivity extends BaseActivity implements CameraDialog.Camer
 
         @Override
         protected String doInBackground(String... strings) {
-            String oldBmp = null;
+            oldBmp = null;
             while (oldBmp == null){
                 oldBmp = mCameraHandler.getBitmap();
                 Log.d(TAG,"newBmp 111 " + oldBmp);
                 Log.d(TAG,"newBmp 11 " + newBmp);
-                if(oldBmp !=null ){
+                if(oldBmp == null ){
                        Log.d(TAG,"newBmp 44 " + newBmp);
                     if(!newBmp.equals(oldBmp)){
-                        newBmp = oldBmp;
+//                        newBmp = oldBmp;
                         Log.d(TAG,"newBmp 121 " + newBmp);
                     }else{
                         Log.d(TAG,"newBmp 22 " + newBmp);
                         oldBmp = null;
                     }
                 }
-//                oldBmp = newBmp;
-                Log.d(TAG,"newBmp 33 " + oldBmp);
+//                newBmp = oldBmp;
+                Log.d(TAG,"newBmp 33 " + oldBmp + " newBmp " + newBmp);
             }
             return newBmp;
         }
@@ -348,10 +399,14 @@ public class TestMainActivity extends BaseActivity implements CameraDialog.Camer
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
+            Log.d(TAG,"newBmp 444 " + newBmp );
             if(newBmp.equals(s)){
-                Log.d(TAG,"newBmp 44 " + newBmp);
-                FragmentTransaction ft = getFragmentManager().beginTransaction();
-                ft.add(android.R.id.content, EditSavePhotoFragment.newInstance(newBmp)).commit();
+//                FragmentTransaction ft = getFragmentManager().beginTransaction();
+//                ft.add(android.R.id.content, EditSavePhotoFragment.newInstance(newBmp)).commit();
+
+                Intent myIntent = new Intent(TestMainActivity.this, EditImageActivity.class);
+                myIntent.putExtra("bitmap", oldBmp); //Optional parameters
+                TestMainActivity.this.startActivity(myIntent);
             }
 
         }
@@ -361,7 +416,17 @@ public class TestMainActivity extends BaseActivity implements CameraDialog.Camer
     {
         Log.d(TAG, "onEdit");
         Toast.makeText(this, " edit napindot mo", Toast.LENGTH_SHORT).show();
-
     }
 
+    public void onPictureframe(View view)
+    {
+        Log.d(TAG, "onPictureframe");
+        Toast.makeText(this, " frame napindot mo", Toast.LENGTH_LONG).show();
+    }
+
+    public void onTimer(View view)
+    {
+        Log.d(TAG, "onTimer");
+        Toast.makeText(this, " timer napindot mo", Toast.LENGTH_SHORT).show();
+    }
 }

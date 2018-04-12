@@ -56,7 +56,6 @@ public class EditSavePhotoFragment extends Fragment implements View.OnClickListe
         Fragment fragment = new EditSavePhotoFragment();
 
         Bundle args = new Bundle();
-        // lagyan ng pang kuha sa bitmap
 
         args.putString("bitmap", bitmap);
 //        args.putByteArray(BITMAP_KEY, bitmapByteArray);
@@ -101,6 +100,7 @@ public class EditSavePhotoFragment extends Fragment implements View.OnClickListe
 
         if(file.exists()){
             myBitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
+            Log.d(TAG, "myBitmap " + myBitmap);
             photoImageView.setImageBitmap(myBitmap);
         }
 
