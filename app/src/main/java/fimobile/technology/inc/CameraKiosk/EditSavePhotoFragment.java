@@ -5,16 +5,12 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Matrix;
 import android.graphics.drawable.BitmapDrawable;
-import android.media.ThumbnailUtils;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 //import android.support.v4.app.Fragment;
 import android.app.Fragment;
@@ -47,7 +43,7 @@ public class EditSavePhotoFragment extends Fragment implements View.OnClickListe
     private static final int REQUEST_SHARE_IMAGE = 2;
 
     private ImageButton backBtn;
-    private TestMainActivity mainActivity;
+    private MainActivity mainActivity;
     private static String imgBitmap;
     private ImageView photoImageView;
     private Bitmap myBitmap;
@@ -251,7 +247,7 @@ public class EditSavePhotoFragment extends Fragment implements View.OnClickListe
                 Uri photoUri = ImageUtility.savePicture(getActivity(), bitmap);
                 Log.d(TAG, "photoURI"+ photoUri);
 
-//                ((TestMainActivity) getActivity()).returnPhotoUri(photoUri);
+//                ((MainActivity) getActivity()).returnPhotoUri(photoUri);
             }
 
         } else if (REQUEST_SHARE_IMAGE == requestCode && data != null){

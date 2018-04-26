@@ -12,6 +12,7 @@ import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.preference.PreferenceManager;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
@@ -266,9 +267,13 @@ Log.d(TAG, " myBitmap " + myBitmap);
                 break;
 
             case R.id.imgClose:
+                SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+
                 if (!mPhotoEditor.isCacheEmpty()) {
                     showSaveDialog();
                 } else {
+                    Log.d(TAG, " locked finish ");
+                    Boolean yourLocked = prefs.edit().putBoolean("MY_PREFS_NAME", true).commit();
                     finish();
                 }
                 break;
@@ -308,7 +313,7 @@ Log.d(TAG, " myBitmap " + myBitmap);
                     @Override
                     public void onSuccess(@NonNull String imagePath) {
                         hideLoading();
-                        showSnackbar("Image Saved Successfully");
+//                        showSnackbar("Image Saved Successfully");
                         mPhotoEditorView.getSource().setImageURI(Uri.fromFile(new File(imagePath)));
                     }
 

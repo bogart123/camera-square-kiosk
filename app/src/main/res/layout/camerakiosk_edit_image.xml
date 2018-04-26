@@ -51,7 +51,7 @@
         <ImageButton
             android:id="@+id/imgSave"
             android:layout_width="wrap_content"
-            android:src="@drawable/camerakiosk_save"
+            android:src="@drawable/camerakiosk_share"
             android:background="@android:color/transparent"
             android:layout_height="60dp"
             android:layout_weight="1"

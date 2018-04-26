@@ -27,7 +27,6 @@ import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v13.app.FragmentCompat;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -36,7 +35,6 @@ import android.view.Surface;
 import android.view.SurfaceHolder;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewTreeObserver;
 import android.view.WindowManager;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.CompoundButton;
@@ -54,7 +52,6 @@ import com.serenegiant.usb.UVCCamera;
 import com.serenegiant.usbcameracommon.UVCCameraHandler;
 import com.serenegiant.widget.CameraViewInterface;
 
-import java.io.IOException;
 import java.util.List;
 
 public class CameraFragment extends BaseFragment implements  Camera.PictureCallback, FragmentCompat.OnRequestPermissionsResultCallback, View.OnClickListener, CameraDialog.CameraDialogParent {
@@ -139,6 +136,9 @@ public class CameraFragment extends BaseFragment implements  Camera.PictureCallb
 //    private ImageView image;
     private static final int PICK_IMAGE_REQUEST = 1;
     private static final int REQUEST_CAMERA = 0;
+    ImageButton timerImg;
+
+
 
     @Override
     public void onAttach(Context context) {
@@ -179,7 +179,7 @@ public class CameraFragment extends BaseFragment implements  Camera.PictureCallb
 
 
         Log.d(TAG, "oncreate 2 ");
-        View v = inflater.inflate(R.layout.testmain_layout, container, false);
+        View v = inflater.inflate(R.layout.main_layout, container, false);
 
 //        image = (ImageView) v.findViewById(R.id.image);
 
@@ -196,7 +196,8 @@ public class CameraFragment extends BaseFragment implements  Camera.PictureCallb
         save_photo.setOnClickListener(this );
         camera_button = (ToggleButton) v.findViewById(R.id.camera_button);
         camera_button.setOnCheckedChangeListener(mOnCheckedChangeListener);
-
+        timerImg = (ImageButton)v.findViewById(R.id.timer);
+        timerImg.setOnClickListener(this);
         return v;
     }
 
