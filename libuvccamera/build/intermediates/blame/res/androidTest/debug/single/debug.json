@@ -8,8 +8,16 @@
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\btn_video_shutter_recording_holo.png"
     },
     {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_frame_circle.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\ic_frame_circle.png"
+    },
+    {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_frame_circle_2.png.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-ldpi-v4\\ic_frame_circle_2.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_frame_cross.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\ic_frame_cross.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_shutter_video_pressed.png.flat",
@@ -24,32 +32,40 @@
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\drawable\\border_black.xml"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_color_circle.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxhdpi-v4\\ic_color_circle.png"
-    },
-    {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_toggle_button_base.xml.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\drawable\\toggle_button_base.xml"
-    },
-    {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_frame_cross.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xhdpi-v4\\ic_frame_cross.png"
-    },
-    {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_color_circle.png.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxxhdpi-v4\\ic_color_circle.png"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_frame_cross.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-ldpi-v4\\ic_frame_cross.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_color_circle.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xxxhdpi-v4\\ic_color_circle.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_frame_frame.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-ldpi-v4\\ic_frame_frame.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_frame_cross_circle2.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-ldpi-v4\\ic_frame_cross_circle2.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_transparent.png.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-ldpi-v4\\ic_transparent.png"
     },
     {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\animator_card_flip_right_out.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\animator\\card_flip_right_out.xml"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_btn_new_shutter_video.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\drawable\\btn_new_shutter_video.xml"
+    },
+    {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_color_picker.xml.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\layout\\color_picker.xml"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_repeat_shutter_recording_pressed_holo.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\btn_repeat_shutter_recording_pressed_holo.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_frame_cross_quarter.png.flat",
@@ -60,6 +76,378 @@
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\anim\\slide_out_right.xml"
     },
     {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\animator_card_flip_left_in.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\animator\\card_flip_left_in.xml"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\animator_card_flip_right_in.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\animator\\card_flip_right_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_view_frame_selector.xml.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\layout\\view_frame_selector.xml"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_frame_circle_2.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-mdpi-v4\\ic_frame_circle_2.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_drawer.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-mdpi-v4\\ic_drawer.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_color_circle.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-ldpi-v4\\ic_color_circle.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_frame_frame.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xhdpi-v4\\ic_frame_frame.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_color_circle.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xxhdpi-v4\\ic_color_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_frame_cross.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\ic_frame_cross.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_shutter_default.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\btn_shutter_default.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_frame_circle.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\ic_frame_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_frame_cross_quarter.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-ldpi-v4\\ic_frame_cross_quarter.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_frame_circle.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xhdpi-v4\\ic_frame_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_color_circle.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\ic_color_circle.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\animator_card_flip_left_out.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\animator\\card_flip_left_out.xml"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_border.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\drawable\\border.xml"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_drawer.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxhdpi-v4\\ic_drawer.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_border_black.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\drawable\\border_black.xml"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_frame_cross_circle2.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-mdpi-v4\\ic_frame_cross_circle2.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_frame_circle.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xhdpi-v4\\ic_frame_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_frame_cross_circle2.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xhdpi-v4\\ic_frame_cross_circle2.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_frame_frame.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-mdpi-v4\\ic_frame_frame.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_transparent.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xhdpi-v4\\ic_transparent.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_frame_cross_circle.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\ic_frame_cross_circle.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_shutter_video_pressed.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\btn_shutter_video_pressed.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_frame_frame.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-ldpi-v4\\ic_frame_frame.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_frame_circle_2.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxxhdpi-v4\\ic_frame_circle_2.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_frame_cross.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxhdpi-v4\\ic_frame_cross.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_frame_cross_circle.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xhdpi-v4\\ic_frame_cross_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_frame_frame.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxxhdpi-v4\\ic_frame_frame.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim_slide_out_left.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\anim\\slide_out_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21_star.xml.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\drawable-v21\\star.xml"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_frame_cross_circle.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xxxhdpi-v4\\ic_frame_cross_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_shutter_video_default.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\btn_shutter_video_default.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_frame_cross_circle.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxxhdpi-v4\\ic_frame_cross_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_repeat_shutter_pressed.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\btn_repeat_shutter_pressed.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_repeat_shutter_recording_pressed_holo.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\btn_repeat_shutter_recording_pressed_holo.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_frame.9.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\drawable\\frame.9.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_frame_cross.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xxhdpi-v4\\ic_frame_cross.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_frame_frame.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\ic_frame_frame.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_transparent.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-mdpi-v4\\ic_transparent.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_dialog_camera.xml.flat",
+        "source": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\bundles\\debug\\res\\layout\\dialog_camera.xml"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_frame_frame.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xxxhdpi-v4\\ic_frame_frame.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_btn_shutter_video_recording.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\drawable\\btn_shutter_video_recording.xml"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_shutter_pressed.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\btn_shutter_pressed.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\animator_card_flip_right_out.xml.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\animator\\card_flip_right_out.xml"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_frame_circle_2.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xxhdpi-v4\\ic_frame_circle_2.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_frame_circle.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xxhdpi-v4\\ic_frame_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_frame_frame.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxhdpi-v4\\ic_frame_frame.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_item_picker.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\layout\\item_picker.xml"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_toggle_slide.xml.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\drawable\\toggle_slide.xml"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_frame_cross_quarter.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xhdpi-v4\\ic_frame_cross_quarter.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_frame_circle_2.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xhdpi-v4\\ic_frame_circle_2.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_frame_cross_circle.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-mdpi-v4\\ic_frame_cross_circle.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_frame_frame.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-mdpi-v4\\ic_frame_frame.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_frame_cross_circle.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-mdpi-v4\\ic_frame_cross_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_border_gray.xml.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\drawable\\border_gray.xml"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_frame_circle_2.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\ic_frame_circle_2.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_quater_clear_rect.xml.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\drawable\\quater_clear_rect.xml"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_frame_circle.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxxhdpi-v4\\ic_frame_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_frame_cross_quarter.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxhdpi-v4\\ic_frame_cross_quarter.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_color_circle.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-mdpi-v4\\ic_color_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_repeat_shutter_default.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\btn_repeat_shutter_default.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_recordingtime.xml.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\drawable\\recordingtime.xml"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_frame_circle.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-ldpi-v4\\ic_frame_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\animator_card_flip_left_out.xml.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\animator\\card_flip_left_out.xml"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_shutter_default.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\btn_shutter_default.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_recordingtime.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\drawable\\recordingtime.xml"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_video_shutter_recording_pressed_holo.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\btn_video_shutter_recording_pressed_holo.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_frame_circle_2.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\ic_frame_circle_2.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_color_picker_dialog.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\layout\\color_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_list_item_bluetooth_device_info.xml.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\layout\\list_item_bluetooth_device_info.xml"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_frame_cross_circle.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-ldpi-v4\\ic_frame_cross_circle.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_transparent.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xxhdpi-v4\\ic_transparent.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_frame_cross.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-mdpi-v4\\ic_frame_cross.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_frame_circle.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxhdpi-v4\\ic_frame_circle.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_frame_circle.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-mdpi-v4\\ic_frame_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_transparent.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xhdpi-v4\\ic_transparent.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\animator_card_flip_left_in.xml.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\animator\\card_flip_left_in.xml"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_increment.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\ic_increment.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_drawer.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xhdpi-v4\\ic_drawer.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_frame_cross_circle2.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\ic_frame_cross_circle2.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_frame_circle_2.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xxxhdpi-v4\\ic_frame_circle_2.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_toggle_button_base.xml.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\drawable\\toggle_button_base.xml"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_color_circle.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxhdpi-v4\\ic_color_circle.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_repeat_shutter_pressed.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\btn_repeat_shutter_pressed.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_frame_cross_circle2.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xxhdpi-v4\\ic_frame_cross_circle2.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_frame_cross_circle.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xxhdpi-v4\\ic_frame_cross_circle.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_frame_cross_circle.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\ic_frame_cross_circle.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_device_filter.xml.flat",
+        "source": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\bundles\\debug\\res\\xml\\device_filter.xml"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_frame_cross.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xhdpi-v4\\ic_frame_cross.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_frame_circle_2.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-ldpi-v4\\ic_frame_circle_2.png"
+    },
+    {
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_frame_cross.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-ldpi-v4\\ic_frame_cross.png"
+    },
+    {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_frame_circle.png.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-ldpi-v4\\ic_frame_circle.png"
     },
@@ -68,12 +456,8 @@
         "source": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\bundles\\debug\\res\\xml\\device_filter.xml"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_view_frame_selector.xml.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\layout\\view_frame_selector.xml"
-    },
-    {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_drawer.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-mdpi-v4\\ic_drawer.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_frame.9.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\drawable\\frame.9.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_color_circle.png.flat",
@@ -92,32 +476,24 @@
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\animator\\card_flip_right_in.xml"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_shutter_default.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\btn_shutter_default.png"
-    },
-    {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_frame_cross.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\ic_frame_cross.png"
-    },
-    {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_frame_cross_quarter.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-ldpi-v4\\ic_frame_cross_quarter.png"
-    },
-    {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_frame_circle.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\ic_frame_circle.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_frame_cross.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xhdpi-v4\\ic_frame_cross.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_drawer.png.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\ic_drawer.png"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_color_circle.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\ic_color_circle.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_color_circle.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xhdpi-v4\\ic_color_circle.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_transparent.png.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxxhdpi-v4\\ic_transparent.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_repeat_shutter_default.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\btn_repeat_shutter_default.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_mask_circle.xml.flat",
@@ -128,16 +504,28 @@
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\ic_decrement.png"
     },
     {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_frame_frame.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\ic_frame_frame.png"
+    },
+    {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_transparent.png.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxhdpi-v4\\ic_transparent.png"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_drawer.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxhdpi-v4\\ic_drawer.png"
-    },
-    {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_repeat_shutter_recording_holo.png.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\btn_repeat_shutter_recording_holo.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_frame_cross_circle2.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xxxhdpi-v4\\ic_frame_cross_circle2.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_frame_cross_quarter.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xhdpi-v4\\ic_frame_cross_quarter.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_repeat_shutter_recording_holo.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\btn_repeat_shutter_recording_holo.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_frame_cross_circle2.png.flat",
@@ -148,100 +536,72 @@
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxhdpi-v4\\ic_frame_cross_circle.png"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_frame_circle.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xhdpi-v4\\ic_frame_circle.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_mask_circle.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\drawable\\mask_circle.xml"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_frame_cross_circle2.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xhdpi-v4\\ic_frame_cross_circle2.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_view_frame_selector.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\layout\\view_frame_selector.xml"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_frame_frame.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-mdpi-v4\\ic_frame_frame.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_transparent.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\ic_transparent.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_transparent.png.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\ic_transparent.png"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_frame_cross_circle.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\ic_frame_cross_circle.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_shutter_pressed.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\btn_shutter_pressed.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_btn_repeat_shutter_recording.xml.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\drawable\\btn_repeat_shutter_recording.xml"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_frame_frame.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-ldpi-v4\\ic_frame_frame.png"
-    },
-    {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_btn_shutter_video_recording.xml.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\drawable\\btn_shutter_video_recording.xml"
-    },
-    {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_frame_circle_2.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxxhdpi-v4\\ic_frame_circle_2.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_frame_circle.png.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-mdpi-v4\\ic_frame_circle.png"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_frame_cross.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxhdpi-v4\\ic_frame_cross.png"
+        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_frame_cross_circle.png.flat",
+        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-ldpi-v4\\ic_frame_cross_circle.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim_slide_in_right.xml.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\anim\\slide_in_right.xml"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_frame_frame.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxxhdpi-v4\\ic_frame_frame.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_color_picker.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\layout\\color_picker.xml"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_frame_cross_circle.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-ldpi-v4\\ic_frame_cross_circle.png"
-    },
-    {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21_star.xml.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\drawable-v21\\star.xml"
-    },
-    {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_frame_cross_circle.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxxhdpi-v4\\ic_frame_cross_circle.png"
-    },
-    {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_shutter_video_default.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\btn_shutter_video_default.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim_slide_in_left.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\anim\\slide_in_left.xml"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_btn_new_shutter.xml.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\drawable\\btn_new_shutter.xml"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_repeat_shutter_pressed.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\btn_repeat_shutter_pressed.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_frame_circle.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xxxhdpi-v4\\ic_frame_circle.png"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_repeat_shutter_recording_pressed_holo.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\btn_repeat_shutter_recording_pressed_holo.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_toggle.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\drawable\\toggle.xml"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_frame.9.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\drawable\\frame.9.png"
-    },
-    {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_frame_frame.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\ic_frame_frame.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_transparent_rect.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\drawable\\transparent_rect.xml"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_frame_cross_quarter.png.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-mdpi-v4\\ic_frame_cross_quarter.png"
-    },
-    {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_transparent.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-mdpi-v4\\ic_transparent.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_color_picker_dialog.xml.flat",
@@ -252,12 +612,8 @@
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-mdpi-v4\\ic_frame_cross_circle2.png"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_shutter_pressed.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\btn_shutter_pressed.png"
-    },
-    {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\animator_card_flip_right_out.xml.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\animator\\card_flip_right_out.xml"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_frame_circle_2.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xhdpi-v4\\ic_frame_circle_2.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_frame_cross.9.png.flat",
@@ -268,24 +624,28 @@
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-mdpi-v4\\ic_color_circle.png"
     },
     {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_color_circle.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\ic_color_circle.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_toggle_button_base.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\drawable\\toggle_button_base.xml"
+    },
+    {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_listitem_device.xml.flat",
         "source": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\bundles\\debug\\res\\layout\\listitem_device.xml"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_frame_frame.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxhdpi-v4\\ic_frame_frame.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_seekbar_preference.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\layout\\seekbar_preference.xml"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_toggle_slide.xml.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\drawable\\toggle_slide.xml"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim_slide_in_right.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\anim\\slide_in_right.xml"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_frame_cross_quarter.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xhdpi-v4\\ic_frame_cross_quarter.png"
-    },
-    {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_frame_circle_2.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xhdpi-v4\\ic_frame_circle_2.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_transparent.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-ldpi-v4\\ic_transparent.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_frame_circle_2.png.flat",
@@ -300,6 +660,14 @@
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\anim\\slide_in_left.xml"
     },
     {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_drawer.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-mdpi-v4\\ic_drawer.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_toggle_slide.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\drawable\\toggle_slide.xml"
+    },
+    {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_color_circle.png.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-ldpi-v4\\ic_color_circle.png"
     },
@@ -312,28 +680,32 @@
         "source": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\bundles\\debug\\res\\layout\\dialog_camera.xml"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_frame_cross_circle.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-mdpi-v4\\ic_frame_cross_circle.png"
-    },
-    {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_border_gray.xml.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\drawable\\border_gray.xml"
-    },
-    {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_quater_clear_rect.xml.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\drawable\\quater_clear_rect.xml"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_frame_cross_circle2.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xhdpi-v4\\ic_frame_cross_circle2.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_increment.png.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\ic_increment.png"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_frame_circle.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxxhdpi-v4\\ic_frame_circle.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_transparent.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xxxhdpi-v4\\ic_transparent.png"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_frame_cross_quarter.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxhdpi-v4\\ic_frame_cross_quarter.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_drawer.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xxhdpi-v4\\ic_drawer.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_quater_clear_rect.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\drawable\\quater_clear_rect.xml"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_frame_frame.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xxhdpi-v4\\ic_frame_frame.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_frame_cross.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-ldpi-v4\\ic_frame_cross.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_frame_frame.png.flat",
@@ -344,68 +716,112 @@
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xhdpi-v4\\ic_drawer.png"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_repeat_shutter_default.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\btn_repeat_shutter_default.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21_star.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\drawable-v21\\star.xml"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_frame_cross_circle2.png.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-ldpi-v4\\ic_frame_cross_circle2.png"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_recordingtime.xml.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\drawable\\recordingtime.xml"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_transparent.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-mdpi-v4\\ic_transparent.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_list_item_bluetooth_device_info.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\layout\\list_item_bluetooth_device_info.xml"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_frame_cross_circle2.png.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\ic_frame_cross_circle2.png"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\animator_card_flip_left_out.xml.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\animator\\card_flip_left_out.xml"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_shutter_video_default.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\btn_shutter_video_default.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_btn_new_shutter_video.xml.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\drawable\\btn_new_shutter_video.xml"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_frame_circle_2.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\ic_frame_circle_2.png"
-    },
-    {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_frame_cross_circle2.png.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxxhdpi-v4\\ic_frame_cross_circle2.png"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_list_item_bluetooth_device_info.xml.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\layout\\list_item_bluetooth_device_info.xml"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_decrement.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\ic_decrement.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim_slide_out_right.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\anim\\slide_out_right.xml"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_frame_cross.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xxxhdpi-v4\\ic_frame_cross.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_transparent_rect.xml.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\drawable\\transparent_rect.xml"
     },
     {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_video_shutter_recording_holo.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\btn_video_shutter_recording_holo.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_border_gray.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\drawable\\border_gray.xml"
+    },
+    {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_frame_circle_2.png.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-mdpi-v4\\ic_frame_circle_2.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_drawer.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\ic_drawer.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_btn_video_shutter_recording_pressed_holo.png.flat",
         "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-hdpi-v4\\btn_video_shutter_recording_pressed_holo.png"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_frame_cross.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-mdpi-v4\\ic_frame_cross.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_frame_cross.9.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\drawable\\frame_cross.9.png"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_frame_circle.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xxhdpi-v4\\ic_frame_circle.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_listitem_device.xml.flat",
+        "source": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\bundles\\debug\\res\\layout\\listitem_device.xml"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4_ic_transparent.png.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\mipmap-xhdpi-v4\\ic_transparent.png"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_btn_repeat_shutter_recording.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\drawable\\btn_repeat_shutter_recording.xml"
     },
     {
-        "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\animator_card_flip_left_in.xml.flat",
-        "source": "C:\\Users\\FiMobile-JMK\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\fb150da2787d19704ea7694055dafe6f\\res\\animator\\card_flip_left_in.xml"
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-ldpi-v4_ic_frame_cross_quarter.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-ldpi-v4\\ic_frame_cross_quarter.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_ic_frame_cross_quarter.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xxhdpi-v4\\ic_frame_cross_quarter.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_btn_new_shutter.xml.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\drawable\\btn_new_shutter.xml"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4_ic_frame_cross_quarter.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-xxxhdpi-v4\\ic_frame_cross_quarter.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4_ic_frame_cross_quarter.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-hdpi-v4\\ic_frame_cross_quarter.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_frame_cross_quarter.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-mdpi-v4\\ic_frame_cross_quarter.png"
+    },
+    {
+        "merged": "E:\\10-09-17\\SquareCam\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4_ic_frame_cross.png.flat",
+        "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\mipmap-mdpi-v4\\ic_frame_cross.png"
     },
     {
         "merged": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\libuvccamera\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_item_picker.xml.flat",

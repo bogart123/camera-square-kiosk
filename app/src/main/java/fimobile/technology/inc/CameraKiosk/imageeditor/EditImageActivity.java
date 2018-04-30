@@ -1,6 +1,8 @@
 package fimobile.technology.inc.CameraKiosk.imageeditor;
 
 import android.Manifest;
+import android.accounts.Account;
+import android.accounts.AccountManager;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -9,6 +11,7 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -22,9 +25,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 import fimobile.technology.inc.CameraKiosk.R;
 import fimobile.technology.inc.CameraKiosk.photoeditor.OnPhotoEditorListener;
@@ -43,6 +50,7 @@ public class EditImageActivity extends BaseActivity implements OnPhotoEditorList
     public static final String EXTRA_IMAGE_PATHS = "extra_image_paths";
     private static final int CAMERA_REQUEST = 52;
     private static final int PICK_REQUEST = 53;
+    private static final int REQUEST_SHARE_IMAGE = 2;
     private PhotoEditor mPhotoEditor;
     private PhotoEditorView mPhotoEditorView;
     private PropertiesBSFragment mPropertiesBSFragment;
@@ -53,6 +61,7 @@ public class EditImageActivity extends BaseActivity implements OnPhotoEditorList
     private static String imgBitmap;
     private Bitmap myBitmap;
     private String newString;
+    private File file;
     public static final String MY_PREFS_NAME = "MyPrefsFile";
 
     /**
@@ -130,8 +139,7 @@ public class EditImageActivity extends BaseActivity implements OnPhotoEditorList
 //        Intent intent = getIntent();
 //        newString = intent.getStringExtra("bitmap");
 
-
-        File file = new File(newString);
+        file = new File(newString);
         Log.d(TAG, "imgBitmap " + imgBitmap + " newString " + newString + " file " + file);
         if(file.exists()){
 
@@ -156,7 +164,7 @@ Log.d(TAG, " myBitmap " + myBitmap);
         ImageView imgGallery;
         ImageView imgSticker;
         ImageView imgEmo;
-        ImageView imgSave;
+        ImageView imgShare;
         ImageView imgClose;
 
         mPhotoEditorView = findViewById(R.id.photoEditorView);
@@ -189,11 +197,46 @@ Log.d(TAG, " myBitmap " + myBitmap);
 //        imgGallery = findViewById(R.id.imgGallery);
 //        imgGallery.setOnClickListener(this);
 
-        imgSave = findViewById(R.id.imgSave);
-        imgSave.setOnClickListener(this);
+        imgShare = findViewById(R.id.imgShare);
+        imgShare.setOnClickListener(this);
 
         imgClose = findViewById(R.id.imgClose);
         imgClose.setOnClickListener(this);
+    }
+
+
+
+    public void onShare() {
+//        PhotoEditorView photoImageView = findViewById(R.id.photoEditorView);
+//        Bitmap bitmap = ((BitmapDrawable) photoImageView.get()).getBitmap();
+
+//        try {
+//            ByteArrayOutputStream out = new ByteArrayOutputStream();
+//            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, out);
+//            FileOutputStream stream = new FileOutputStream(mediaFile);
+//            stream.write(out.toByteArray());
+//            stream.close();
+//            out.close();
+//            BitmapFactory.decodeByteArray(out.toByteArray(),0, out.size());
+//
+//        } catch (IOException exception) {
+//            exception.printStackTrace();
+//        }
+//
+
+        //String paths = mediaStorageDir.getPath() + File.separator + "IMG_" + timeStamp + ".jpg";
+        //String paths = "storage/emulated/0/Picture/SquareCamera/IMG_20180222_114056.jpg";
+        //File file = new File(paths);
+
+
+        saveImage();
+        Log.d(TAG, "FILEPATHFILE" + file);
+        Uri uri = Uri.fromFile(file);
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("image/*");
+        intent.putExtra(Intent.EXTRA_STREAM, uri);
+        startActivityForResult(Intent.createChooser(intent, "Share Image"), REQUEST_SHARE_IMAGE);
+
     }
 
     @Override
@@ -262,8 +305,9 @@ Log.d(TAG, " myBitmap " + myBitmap);
                 mPhotoEditor.redo();
                 break;
 
-            case R.id.imgSave:
-                saveImage();
+            case R.id.imgShare:
+
+                onShare();
                 break;
 
             case R.id.imgClose:
@@ -304,7 +348,7 @@ Log.d(TAG, " myBitmap " + myBitmap);
     private void saveImage() {
         if (requestPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
             showLoading("Saving...");
-            File file = new File(Environment.getExternalStorageDirectory()
+            file = new File("storage/emulated/0/DCIM/USBCameraTest/"
                     + File.separator + ""
                     + System.currentTimeMillis() + ".png");
             try {
@@ -347,6 +391,23 @@ Log.d(TAG, " myBitmap " + myBitmap);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
+                    break;
+
+                case REQUEST_SHARE_IMAGE:
+                    Log.d(TAG, "DONE Sharing");
+                    file.delete();
+                    AccountManager manager=(AccountManager) this.getSystemService(Context.ACCOUNT_SERVICE);
+                    Account[] accountlist=manager.getAccounts();
+                    Log.d(TAG, "ACCOUNTSNITO");
+                    for(int i=0 ; i < accountlist.length ; i++ )
+                    {
+                        Log.d(TAG, "ACCOUNTSNITO2"+ accountlist[i]);
+                        manager.removeAccount(accountlist[i], null, null);
+                    }
+
+
+
+                    //clear accounts
                     break;
             }
         }
