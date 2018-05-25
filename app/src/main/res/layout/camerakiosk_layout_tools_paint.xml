@@ -11,7 +11,7 @@
         android:id="@+id/imgPencil"
         android:layout_width="@dimen/camerakiosk_editor_size"
         android:layout_height="@dimen/camerakiosk_editor_size"
-        android:layout_margin="4dp"
+        android:layout_margin="20dp"
         android:layout_marginBottom="8dp"
         android:src="@drawable/camerakiosk_brush"
         app:layout_constraintEnd_toStartOf="@+id/imgText"
@@ -23,7 +23,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="20dp"
         android:text="@string/camerakiosk_label_brush"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="@+id/imgPencil"
@@ -33,7 +33,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="20dp"
         android:text="Text"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="@+id/imgText"
@@ -43,7 +43,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="20dp"
         android:text="Eraser"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="@+id/btnEraser"
@@ -54,7 +54,7 @@
         android:id="@+id/imgText"
         android:layout_width="@dimen/camerakiosk_editor_size"
         android:layout_height="@dimen/camerakiosk_editor_size"
-        android:layout_margin="4dp"
+        android:layout_margin="20dp"
         android:layout_marginTop="8dp"
         android:src="@drawable/camerakiosk_text"
         app:layout_constraintEnd_toStartOf="@+id/btnEraser"
@@ -66,26 +66,38 @@
         android:id="@+id/btnEraser"
         android:layout_width="@dimen/camerakiosk_editor_size"
         android:layout_height="@dimen/camerakiosk_editor_size"
-        android:layout_margin="4dp"
+        android:layout_margin="20dp"
         android:layout_marginTop="8dp"
         android:padding="4dp"
         android:src="@drawable/camerakiosk_eraser"
         app:layout_constraintEnd_toStartOf="@+id/imgSticker"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.5"
         app:layout_constraintStart_toEndOf="@+id/imgText" />
 
     <ImageView
         android:id="@+id/imgSticker"
         android:layout_width="@dimen/camerakiosk_editor_size"
         android:layout_height="@dimen/camerakiosk_editor_size"
-        android:layout_margin="4dp"
+        android:layout_margin="20dp"
         android:layout_marginTop="8dp"
         android:src="@drawable/camerakiosk_sticker"
         app:layout_constraintEnd_toStartOf="@+id/imgEmoji"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.5"
         app:layout_constraintStart_toEndOf="@+id/btnEraser" />
 
     <ImageView
+        android:id="@+id/imgEmoji"
+        android:layout_width="@dimen/camerakiosk_editor_size"
+        android:layout_height="@dimen/camerakiosk_editor_size"
+        android:layout_margin="20dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/camerakiosk_insert_emoticon"
+        app:layout_constraintEnd_toStartOf="@+id/imgFrame"
+        app:layout_constraintHorizontal_bias="1.5"
+        app:layout_constraintStart_toEndOf="@+id/imgSticker"
+        />
+
+   <!-- <ImageView  // original
         android:id="@+id/imgEmoji"
         android:layout_width="@dimen/camerakiosk_editor_size"
         android:layout_height="@dimen/camerakiosk_editor_size"
@@ -95,12 +107,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imgSticker"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
+        app:layout_constraintTop_toTopOf="@+id/guideline" />-->
+
+    <ImageView
+        android:id="@+id/imgFrame"
+        android:layout_width="@dimen/camerakiosk_editor_size"
+        android:layout_height="@dimen/camerakiosk_editor_size"
+        android:layout_margin="20dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/camerakiosk_pictureframe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@+id/imgEmoji" />
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="20dp"
         android:text="Sticker"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="@+id/imgSticker"
@@ -110,11 +135,21 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="20dp"
         android:text="Emoji"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="@+id/imgEmoji"
         app:layout_constraintStart_toStartOf="@+id/imgEmoji"
         app:layout_constraintTop_toBottomOf="@+id/imgEmoji" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Frame"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imgFrame"
+        app:layout_constraintStart_toStartOf="@+id/imgFrame"
+        app:layout_constraintTop_toBottomOf="@+id/imgFrame" />
 
 </android.support.constraint.ConstraintLayout>

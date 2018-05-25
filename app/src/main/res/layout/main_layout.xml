@@ -54,6 +54,7 @@
             android:onClick="onPictureframe"
             android:src="@drawable/camerakiosk_pictureframe"
             android:background="@android:color/transparent"
+            android:visibility="invisible"
             />
 
         <ImageButton

@@ -2,19 +2,19 @@
 <resources>
 
     <integer-array name="camerakiosk_photo_editor_photos">
+        <item>@drawable/thuglife_glasses</item>
+        <item>@drawable/thuglife_glasses_left</item>
+        <item>@drawable/thuglife_glasses_right</item>
+        <item>@drawable/thuglife_smoke</item>
+        <item>@drawable/thuglife_smoke2</item>
+        <item>@drawable/wolverine_251</item>
+        <item>@drawable/spiderman_251</item>
+        <item>@drawable/ironman_251</item>
+        <item>@drawable/hulk_251</item>
+        <item>@drawable/flash_251</item>
+        <item>@drawable/capt_251</item>
         <item>@drawable/c</item>
-        <item>@drawable/d</item>
-        <item>@drawable/e</item>
-        <item>@drawable/i</item>
         <item>@drawable/j</item>
-        <item>@drawable/k</item>
-        <item>@drawable/l</item>
-        <item>@drawable/m</item>
-        <item>@drawable/n</item>
-        <item>@drawable/o</item>
-        <item>@drawable/p</item>
-        <item>@drawable/x</item>
-        <item>@drawable/y</item>
         <item>@drawable/z</item>
         <item>@drawable/aa</item>
         <item>@drawable/bb</item>

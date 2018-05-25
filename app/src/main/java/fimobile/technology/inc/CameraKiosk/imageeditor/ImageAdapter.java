@@ -2,6 +2,7 @@ package fimobile.technology.inc.CameraKiosk.imageeditor;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -14,6 +15,8 @@ import java.util.List;
 
 import fimobile.technology.inc.CameraKiosk.R;
 
+import static fimobile.technology.inc.CameraKiosk.CameraFragment.TAG;
+
 /**
  * Created by Ahmed Adel on 5/4/17.
  */
@@ -23,20 +26,19 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
     private List<Bitmap> imageBitmaps;
     private LayoutInflater inflater;
     private OnImageClickListener onImageClickListener;
+    private StickerBSFragment.StickerListener mStickerListener;
 
     public ImageAdapter(@NonNull Context context, @NonNull List<Bitmap> imageBitmaps) {
-//        this.inflater = LayoutInflater.from(context);
+        this.inflater = LayoutInflater.from(context);
         this.imageBitmaps = imageBitmaps;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-//        View view = inflater.inflate(R.layout.fragment_photo_edit_image_item_list, parent, false);
-        View view = inflater.inflate(R.layout.camerakiosk_row_sticker, parent, false);
-
-        ViewHolder vh = new ViewHolder(view);
-        return vh;
-//        return new ViewHolder(view);
+        View view = inflater.inflate(R.layout.fragment_photo_edit_image_item_list, parent, false);
+//        ViewHolder vh = new ViewHolder(view);
+//        return vh;
+        return new ViewHolder(view);
     }
 
     @Override
@@ -46,7 +48,6 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
 
     @Override
     public int getItemCount() {
-        Log.d("ImageAdapter" , " imageBitmaps " + imageBitmaps);
         return imageBitmaps.size();
     }
 
@@ -59,13 +60,17 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
 
         public ViewHolder(View itemView) {
             super(itemView);
-//            imageView = (ImageView) itemView.findViewById(R.id.fragment_photo_edit_image_iv);
-            imageView = (ImageView) itemView.findViewById(R.id.imgSticker);
+            imageView = (ImageView) itemView.findViewById(R.id.fragment_photo_edit_image_iv);
             imageView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (onImageClickListener != null)
-                        onImageClickListener.onImageClickListener(imageBitmaps.get(getAdapterPosition()));
+                    if (onImageClickListener != null) {
+                        onImageClickListener.onImageClickListener(imageBitmaps.get(getLayoutPosition()));
+                    }
+//                    if (mStickerListener != null) {
+//                            mStickerListener.onStickerClick(
+//                                    BitmapFactory.decodeResource(getResources(), stickerList[getLayoutPosition()]));
+//                        }
                 }
             });
         }

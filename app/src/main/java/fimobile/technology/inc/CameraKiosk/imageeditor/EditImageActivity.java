@@ -1,7 +1,10 @@
 package fimobile.technology.inc.CameraKiosk.imageeditor;
 
 import android.Manifest;
+import android.accounts.Account;
+import android.accounts.AccountManager;
 import android.annotation.SuppressLint;
+import android.app.ActionBar;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -15,15 +18,20 @@ import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 
 import fimobile.technology.inc.CameraKiosk.R;
@@ -43,6 +51,7 @@ public class EditImageActivity extends BaseActivity implements OnPhotoEditorList
     public static final String EXTRA_IMAGE_PATHS = "extra_image_paths";
     private static final int CAMERA_REQUEST = 52;
     private static final int PICK_REQUEST = 53;
+    private static final int REQUEST_SHARE_IMAGE = 2;
     private PhotoEditor mPhotoEditor;
     private PhotoEditorView mPhotoEditorView;
     private PropertiesBSFragment mPropertiesBSFragment;
@@ -53,6 +62,7 @@ public class EditImageActivity extends BaseActivity implements OnPhotoEditorList
     private static String imgBitmap;
     private Bitmap myBitmap;
     private String newString;
+    private File file;
     public static final String MY_PREFS_NAME = "MyPrefsFile";
 
     /**
@@ -84,38 +94,15 @@ public class EditImageActivity extends BaseActivity implements OnPhotoEditorList
         super.onCreate(savedInstanceState);
         makeFullScreen();
         setContentView(R.layout.camerakiosk_edit_image);
-
         initViews();
 
-//        Bundle args = new Bundle();
-//        imgBitmap = args.getString("bitmap");
-
-
-
-//        if (savedInstanceState == null) {
-//            Bundle extras = getIntent().getExtras();
-//            if(extras == null) {
-//                newString= null;
-//            } else {
-//                newString= extras.getString("bitmap");
-//            }
-//        } else {
-//            newString= (String) savedInstanceState.getSerializable("bitmap");
-//        }
-
-
-
         mWonderFont = Typeface.createFromAsset(getAssets(), "beyond_wonderland.ttf");
-
         mPropertiesBSFragment = new PropertiesBSFragment();
         mEmojiBSFragment = new EmojiBSFragment();
         mStickerBSFragment = new StickerBSFragment();
         mStickerBSFragment.setStickerListener(this);
         mEmojiBSFragment.setEmojiListener(this);
         mPropertiesBSFragment.setPropertiesChangeListener(this);
-
-        //Typeface mTextRobotoTf = ResourcesCompat.getFont(this, R.font.roboto_medium);
-        //Typeface mEmojiTypeFace = Typeface.createFromAsset(getAssets(), "emojione-android.ttf");
 
         mPhotoEditor = new PhotoEditor.Builder(this, mPhotoEditorView)
                 .setPinchTextScalable(true) // set flag to make text scalable when pinch
@@ -124,22 +111,13 @@ public class EditImageActivity extends BaseActivity implements OnPhotoEditorList
                 .build(); // build photo editor sdk
         mPhotoEditor.setOnPhotoEditorListener(this);
 
-
         newString = getIntent().getExtras().getString("bitmap","bitmap");
-
-//        Intent intent = getIntent();
-//        newString = intent.getStringExtra("bitmap");
-
-
         File file = new File(newString);
         Log.d(TAG, "imgBitmap " + imgBitmap + " newString " + newString + " file " + file);
         if(file.exists()){
 
-            myBitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
-//            photoImageView.setImageBitmap(myBitmap);
-Log.d(TAG, " myBitmap " + myBitmap);
-            mPhotoEditorView.getSource().setImageBitmap(myBitmap);
-
+        myBitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
+        mPhotoEditorView.getSource().setImageBitmap(myBitmap);
         }
 
         //Set Image Dynamically
@@ -157,10 +135,11 @@ Log.d(TAG, " myBitmap " + myBitmap);
         ImageView imgSticker;
         ImageView imgEmo;
         ImageView imgSave;
+        ImageView imgShare;
         ImageView imgClose;
+        ImageView imgFrame;
 
         mPhotoEditorView = findViewById(R.id.photoEditorView);
-//        mTxtCurrentTool = findViewById(R.id.txtCurrentTool);
 
         imgEmo = findViewById(R.id.imgEmoji);
         imgEmo.setOnClickListener(this);
@@ -189,11 +168,17 @@ Log.d(TAG, " myBitmap " + myBitmap);
 //        imgGallery = findViewById(R.id.imgGallery);
 //        imgGallery.setOnClickListener(this);
 
-        imgSave = findViewById(R.id.imgSave);
-        imgSave.setOnClickListener(this);
+        imgShare = findViewById(R.id.imgShare);
+        imgShare.setOnClickListener(this);
+
+//        imgSave = findViewById(R.id.imgSave);
+//        imgSave.setOnClickListener(this);
 
         imgClose = findViewById(R.id.imgClose);
         imgClose.setOnClickListener(this);
+
+        imgFrame = findViewById(R.id.imgFrame);
+        imgFrame.setOnClickListener(this);
     }
 
     @Override
@@ -231,7 +216,8 @@ Log.d(TAG, " myBitmap " + myBitmap);
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
+        switch (view.getId())
+        {
             case R.id.imgPencil:
                 Log.d(TAG, " pencil " + " mPhotoEditor " + mPhotoEditor + " mTxtCurrentTool " + mTxtCurrentTool + " mPropertiesBSFragment "
                         + mPropertiesBSFragment);
@@ -262,9 +248,9 @@ Log.d(TAG, " myBitmap " + myBitmap);
                 mPhotoEditor.redo();
                 break;
 
-            case R.id.imgSave:
-                saveImage();
-                break;
+//            case R.id.imgSave:
+//                saveImage();
+//                break;
 
             case R.id.imgClose:
                 SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
@@ -297,6 +283,26 @@ Log.d(TAG, " myBitmap " + myBitmap);
 //                intent.setAction(Intent.ACTION_GET_CONTENT);
 //                startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_REQUEST);
 //                break;
+
+            case R.id.imgFrame :
+                Log.d(TAG, " imgFrame 1");
+                mPhotoEditorView.setLayoutParams(new ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.FILL_PARENT, ConstraintLayout.LayoutParams.FILL_PARENT));
+                mPhotoEditorView.setPadding(50,0,50,50);
+//                resizeView(view, 200, 200);
+//                mPhotoEditorView.animate()
+//                        .translationY(view.getHeight())
+//                        .alpha(1.0f)
+//                        .setListener(null);
+
+
+
+                break;
+
+            case R.id.imgShare:
+                onShare();
+                Log.d(TAG, " imgFrame 2");
+                break;
+
         }
     }
 
@@ -304,7 +310,8 @@ Log.d(TAG, " myBitmap " + myBitmap);
     private void saveImage() {
         if (requestPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
             showLoading("Saving...");
-            File file = new File(Environment.getExternalStorageDirectory()
+//            File file = new File(Environment.getExternalStorageDirectory()
+                    file = new File("storage/emulated/0/DCIM/USBCameraTest/"
                     + File.separator + ""
                     + System.currentTimeMillis() + ".png");
             try {
@@ -348,6 +355,19 @@ Log.d(TAG, " myBitmap " + myBitmap);
                         e.printStackTrace();
                     }
                     break;
+
+                case REQUEST_SHARE_IMAGE:
+                    Log.d(TAG, "DONE Sharing");
+                    file.delete();
+                    AccountManager manager = (AccountManager) this.getSystemService(Context.ACCOUNT_SERVICE);
+                    Account[] accountlist = manager.getAccounts();
+                    Log.d(TAG, "ACCOUNTSNITO");
+                    for (int i = 0; i < accountlist.length; i++) {
+                        Log.d(TAG, "ACCOUNTSNITO2" + accountlist[i]);
+                        manager.removeAccount(accountlist[i], null, null);
+                    }
+                    //clear accounts
+                    break;
             }
         }
     }
@@ -380,6 +400,7 @@ Log.d(TAG, " myBitmap " + myBitmap);
     @Override
     public void onStickerClick(Bitmap bitmap) {
         mPhotoEditor.addImage(bitmap);
+        Log.d(TAG, " onStickerClick ");
 //        mTxtCurrentTool.setText(R.string.camerakiosk_label_sticker);
     }
 
@@ -415,4 +436,16 @@ Log.d(TAG, " myBitmap " + myBitmap);
         builder.create().show();
 
     }
+
+    public void onShare()
+    {
+        saveImage();
+        Log.d(TAG, "FILEPATHFILE" + file);
+        Uri uri = Uri.fromFile(file);
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("image/*");
+        intent.putExtra(Intent.EXTRA_STREAM, uri);
+        startActivityForResult(Intent.createChooser(intent, "Share Image"), REQUEST_SHARE_IMAGE);
+    }
+
 }

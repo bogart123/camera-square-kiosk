@@ -177,21 +177,12 @@ public class CameraFragment extends BaseFragment implements  Camera.PictureCallb
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-
-        Log.d(TAG, "oncreate 2 ");
         View v = inflater.inflate(R.layout.main_layout, container, false);
-
-//        image = (ImageView) v.findViewById(R.id.image);
-
         final View view = v.findViewById(R.id.camera_view);
         mUVCCameraView = (CameraViewInterface)view;
-
         mUVCCameraView.setAspectRatio(PREVIEW_WIDTH / (float)PREVIEW_HEIGHT);
-//        mUSBMonitor = new USBMonitor(getActivity().getApplicationContext(), mOnDeviceConnectListener);
-        Log.d(TAG, " after usb monitor ");
         mCameraHandler = UVCCameraHandler.createHandler(getActivity(), mUVCCameraView,
                 USE_SURFACE_ENCODER ? 0 : 1, PREVIEW_WIDTH, PREVIEW_HEIGHT, PREVIEW_MODE);
-        Log.d(TAG, " after usb handler ");
         save_photo = (ImageButton)v.findViewById(R.id.save_photo);
         save_photo.setOnClickListener(this );
         camera_button = (ToggleButton) v.findViewById(R.id.camera_button);
@@ -206,99 +197,6 @@ public class CameraFragment extends BaseFragment implements  Camera.PictureCallb
         super.onViewCreated(view, savedInstanceState);
         mOrientationListener.enable();
 
-//        mPreviewView = (SquareCameraPreview) view.findViewById(R.id.camera_preview_view);
-//        mPreviewView.getHolder().addCallback(CameraFragment.this);
-
-//        final View topCoverView = view.findViewById(R.id.cover_top_view);
-//        final View btnCoverView = view.findViewById(R.id.cover_bottom_view);
-
-//        if (savedInstanceState == null) {
-//            mCameraID = getBackCameraID();
-//            mFlashMode = CameraSettingPreferences.getCameraFlashMode(getActivity());
-//            mImageParameters = new ImageParameters();
-//        } else {
-//            mCameraID = savedInstanceState.getInt(CAMERA_ID_KEY);
-//            mFlashMode = savedInstanceState.getString(CAMERA_FLASH_KEY);
-//            mImageParameters = savedInstanceState.getParcelable(IMAGE_INFO);
-//        }
-//
-//        mImageParameters.mIsPortrait =
-//                getDeviceDefaultOrientation();
-
-//        if (savedInstanceState == null) {
-//            ViewTreeObserver observer = mPreviewView.getViewTreeObserver();
-//            observer.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-//                @Override
-//                public void onGlobalLayout() {
-//                    mImageParameters.mPreviewWidth = mPreviewView.getWidth();
-//                    mImageParameters.mPreviewHeight = mPreviewView.getHeight();
-//
-//                    mImageParameters.mCoverWidth = mImageParameters.mCoverHeight
-//                            = mImageParameters.calculateCoverWidthHeight();
-//
-////                    Log.d(TAG, "parameters: " + mImageParameters.getStringValues());
-////                    Log.d(TAG, "cover height " + topCoverView.getHeight());
-//                    resizeTopAndBtmCover(topCoverView, btnCoverView);
-//
-//                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-//                        mPreviewView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-//                    } else {
-//                        mPreviewView.getViewTreeObserver().removeGlobalOnLayoutListener(this);
-//                    }
-//                }
-//            });
-//        } else {
-//            if (mImageParameters.isPortrait()) {
-//                topCoverView.getLayoutParams().height = mImageParameters.mCoverHeight;
-//                btnCoverView.getLayoutParams().height = mImageParameters.mCoverHeight;
-//            } else {
-//                topCoverView.getLayoutParams().width = mImageParameters.mCoverWidth;
-//                btnCoverView.getLayoutParams().width = mImageParameters.mCoverWidth;
-//            }
-//        }
-
-//        final ImageButton swapCameraBtn = (ImageButton) view.findViewById(R.id.change_camera);
-//        swapCameraBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                Intent intent = new Intent();
-//// Show only images, no videos or anything else
-//                intent.setType("image/*");
-//                intent.setAction(Intent.ACTION_PICK);
-//// Always show the chooser (if there are multiple options available)
-//                startActivityForResult(Intent.createChooser(intent, "Select App"), 1);
-//
-//                CameraSettingPreferences.setForceStop(getActivity(),true);
-//
-//            }
-//        });
-
-//        final View changeCameraFlashModeBtn = view.findViewById(R.id.flash);
-//        changeCameraFlashModeBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if (mFlashMode.equalsIgnoreCase(Camera.Parameters.FLASH_MODE_AUTO)) {
-//                    mFlashMode = Camera.Parameters.FLASH_MODE_ON;
-//                } else if (mFlashMode.equalsIgnoreCase(Camera.Parameters.FLASH_MODE_ON)) {
-//                    mFlashMode = Camera.Parameters.FLASH_MODE_OFF;
-//                } else if (mFlashMode.equalsIgnoreCase(Camera.Parameters.FLASH_MODE_OFF)) {
-//                    mFlashMode = Camera.Parameters.FLASH_MODE_AUTO;
-//                }
-//
-//                setupFlashMode();
-//                setupCamera();
-//            }
-//        });
-//        setupFlashMode();
-
-//        final ImageView takePhotoBtn = (ImageView) view.findViewById(R.id.capture_image_button);
-//        takePhotoBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                takePicture();
-//            }
-//        });
     }
     public void requestCamerapermission() {
         Log.d(TAG, "requestcamerapermission");
@@ -356,7 +254,6 @@ public class CameraFragment extends BaseFragment implements  Camera.PictureCallb
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
-//        Log.d(TAG, "onSaveInstanceState");
         outState.putInt(CAMERA_ID_KEY, mCameraID);
         outState.putString(CAMERA_FLASH_KEY, mFlashMode);
         outState.putParcelable(IMAGE_INFO, mImageParameters);
@@ -684,13 +581,9 @@ public class CameraFragment extends BaseFragment implements  Camera.PictureCallb
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-        Log.d(TAG, " onActivityResult CameraFragment");
         if (resultCode == Activity.RESULT_OK) {
-            Log.d(TAG, "photoURIsave333" );
             Uri photoUri = data.getData();
             if (photoUri != null) {
-
-                Log.d(TAG, " onActivityResult11 " + photoUri.getPath() );
                 try {
                     currentImage = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), photoUri);
 //                    image.setImageBitmap(currentImage);
@@ -832,7 +725,6 @@ public class CameraFragment extends BaseFragment implements  Camera.PictureCallb
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     void openFolderChooserDialogSAF(boolean from_preferences) {
-        Log.d(TAG, "openFolderChooserDialogSAF: " + from_preferences);
         Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT_TREE);
         //Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
         //intent.addCategory(Intent.CATEGORY_OPENABLE);
@@ -888,15 +780,6 @@ public class CameraFragment extends BaseFragment implements  Camera.PictureCallb
         @Override
         public void onAttach(final UsbDevice device) {
             Toast.makeText(getContext(), "USB_DEVICE_ATTACHED", Toast.LENGTH_SHORT).show();
-
-//            if (!mCameraHandler.isOpened()) {
-//                Log.d(TAG, " isopened ");
-//                CameraDialog.showDialog(getActivity());
-//            } else {
-//                mCameraHandler.close();
-//                Log.d(TAG, " isopened not");
-////                setCameraButton(false);
-//            }
         }
 
         @Override
@@ -935,7 +818,6 @@ public class CameraFragment extends BaseFragment implements  Camera.PictureCallb
     };
 
     private void startPreview() {
-        Log.d(TAG, "startPreview");
         final SurfaceTexture st = mUVCCameraView.getSurfaceTexture();
         mCameraHandler.startPreview(new Surface(st));
         getActivity().runOnUiThread(new Runnable() {
@@ -997,19 +879,4 @@ public class CameraFragment extends BaseFragment implements  Camera.PictureCallb
             ((CameraDialog)fragment).updateDevices();
         }
     }
-
-
-
-//    private final Runnable mUpdateItemsOnUITask = new Runnable() {
-//        @Override
-//        public void run() {
-//            if (isFinishing()) return;
-//            final int visible_active = isActive() ? View.VISIBLE : View.INVISIBLE;
-////            mToolsLayout.setVisibility(visible_active);
-////            mBrightnessButton.setVisibility(checkSupportFlag(UVCCamera.PU_BRIGHTNESS)
-////                            ? visible_active : View.INVISIBLE);
-////            mContrastButton.setVisibility(checkSupportFlag(UVCCamera.PU_CONTRAST)
-////                            ? visible_active : View.INVISIBLE);
-//        }
-//    };
 }

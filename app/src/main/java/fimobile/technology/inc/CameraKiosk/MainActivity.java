@@ -86,10 +86,10 @@ public class MainActivity extends BaseActivity implements CameraDialog.CameraDia
     private static String newBmp = "bitmap";
     private PhotoEditorView mPhotoEditorView;
     private PhotoEditor mPhotoEditor;
-    private String oldBmp;
+    private String oldBmp = null;
     private USBMonitor.UsbControlBlock usbCtrlBlock;
     private UsbDevice usbDevice;
-    private boolean asd;
+    private boolean isPrefname;
     private TextView countTextView;
     private ImageButton timer;
     private String capture;
@@ -102,7 +102,6 @@ public class MainActivity extends BaseActivity implements CameraDialog.CameraDia
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_layout);
-        Log.d(TAG, "una oncreate ");
         final View view = findViewById(R.id.camera_view);
         mUVCCameraView = (CameraViewInterface)view;
 
@@ -128,7 +127,7 @@ public class MainActivity extends BaseActivity implements CameraDialog.CameraDia
         });
         checkPermissionWriteExternalStorage();
 
-        asd = false;
+        isPrefname = false;
     }
     ///AbsUVCCameraHandler: supportedSize:{"formats":[{"index":1,"type":4,"default":1,"size":["640x480","160x120","176x144","320x176","320x240","352x288","432x240","544x288","640x360","752x416","800x448","800x600","864x480","960x544","960x720","1024x576","1184x656","1280x720","1280x960"]},{"index":2,"type":6,"default":1,"size":["640x480","160x120","176x144","320x176","320x240","352x288","432x240","544x288","640x360","752x416","800x448","800x600","864x480","960x544","960x720","1024x576","1184x656","1280x720","1280x960"]}]}
     private final USBMonitor.OnDeviceConnectListener mOnDeviceConnectListener = new USBMonitor.OnDeviceConnectListener() {
@@ -137,19 +136,15 @@ public class MainActivity extends BaseActivity implements CameraDialog.CameraDia
             Toast.makeText(MainActivity.this, "USB_DEVICE_ATTACHED", Toast.LENGTH_SHORT).show();
 
             if (!mCameraHandler.isOpened() ) {
-                Log.d(TAG, " isopened ");
                 CameraDialog.showDialog(MainActivity.this);
             } else {
                 mCameraHandler.close();
-                Log.d(TAG, " isopened not");
             }
 
         }
 
         @Override
         public void onConnect(final UsbDevice device, final USBMonitor.UsbControlBlock ctrlBlock, final boolean createNew) {
-//			if (DEBUG)
-            Log.v(TAG, "onConnect:" + " createNew " + createNew + " device " + device + " ctrlBlock " + ctrlBlock);
             usbDevice = device;
             usbCtrlBlock = ctrlBlock;
             mCameraHandler.open(ctrlBlock);
@@ -184,10 +179,8 @@ public class MainActivity extends BaseActivity implements CameraDialog.CameraDia
     };
 
     private void startPreview() {
-        Log.d(TAG, "startPreview");
         final SurfaceTexture st = mUVCCameraView.getSurfaceTexture();
         if(st != null){
-            Log.d(TAG, "st != null");
             mCameraHandler.startPreview(new Surface(st));
             updateItems();
         }
@@ -252,7 +245,6 @@ public class MainActivity extends BaseActivity implements CameraDialog.CameraDia
 
     @Override
     public void onClick(View v) {
-        Log.d(TAG, " onclick " + " currentImage " + currentImage);
         if (currentImage == 0 )
         {
             countTextView.setVisibility(View.VISIBLE);
@@ -360,103 +352,17 @@ public class MainActivity extends BaseActivity implements CameraDialog.CameraDia
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d(TAG, "una onresume " );
 
         final UsbManager mUsbManager;
         mUsbManager = (UsbManager)this.getSystemService(Context.USB_SERVICE);
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        asd = prefs.getBoolean("MY_PREFS_NAME", false);
-        Log.d(TAG, "33 onresume " + asd );
+        isPrefname = prefs.getBoolean("MY_PREFS_NAME", false);
 
-        if (asd)
+        if (isPrefname)
         {
             CameraDialog.showDialog(MainActivity.this);
-
-            Log.d(TAG, "22 onresume " + " usbDevice " + usbDevice);
-
-//            if (!mCameraHandler.isOpened() ) {
-////                View view = findViewById(R.id.camera_view);
-////                mUVCCameraView = (CameraViewInterface)view;
-////                mCameraHandler = UVCCameraHandler.createHandler(this, mUVCCameraView,
-////                        USE_SURFACE_ENCODER ? 0 : 1, PREVIEW_WIDTH, PREVIEW_HEIGHT, PREVIEW_MODE);
-//                mUSBMonitor.processConnect(usbDevice);
-////                mCameraHandler.open(usbCtrlBlock);
-////                mUVCCameraView.onResume();
-//
-//                if(mUSBMonitor != null){
-//                    Log.d(TAG, "22 onresume " );
-//                    mUSBMonitor.requestPermission(usbDevice);
-//                }
-//                else
-//                {
-//                    Log.d(TAG, "22 onresume else " );
-//                }
-//
-//            }
         }
-        else
-        {
-            Log.d(TAG, " onresume fucker ");
-        }
-
-//                }
-//                else
-//                {
-//                    Log.d(TAG, "22 onresume else" );
-//                }
-//
-//            }
-//            else
-//            {
-//                Log.d(TAG, "33 onresume else" );
-//            }
-//        }
-
-
-
-//        if(mUSBMonitor != null && usbDevice != null){
-//            if (mUsbManager.hasPermission(usbDevice)) {
-//                // call onConnect if app already has permission
-//                Log.w(TAG, "hasPermission");
-//               View view = findViewById(R.id.camera_view);
-//                mUVCCameraView = (CameraViewInterface)view;
-//                mUSBMonitor.processConnect(usbDevice);
-//            }
-//        }
-
-//        updateItems();
-//        save_photo.setVisibility(View.VISIBLE);
-//
-//        Log.d(TAG,"locked " + " asd "  + asd);
-//        if (locked)
-//        {
-//            Log.d(TAG,"locked true");
-//            prefs.edit().putBoolean("locked", true).commit();
-//        }
-//        else
-//        {
-//
-//            Log.d(TAG,"locked false " + " asd " + asd + " mCameraHandler.isOpened() " + mCameraHandler.isOpened());
-//            if (mCameraHandler.isOpened() ) {
-//                Log.d(TAG, " isopened ");
-////                CameraDialog.showDialog(MainActivity.this);
-//
-////                final Object item = mSpinner.getSelectedItem();
-////                if (item instanceof UsbDevice) {
-//                    Log.d(TAG, " okbtn ");
-////                    mUSBMonitor.requestPermission((UsbDevice)item);
-////                    ((CameraDialog.CameraDialogParent)this).onDialogResult(false);
-////                }
-//                mUSBMonitor.processConnect(usbDevice);
-//
-//            }
-////            else {
-////                mCameraHandler.close();
-////                Log.d(TAG, " isopened not");
-////            }
-//        }
-
         save_photo.setEnabled(true);
         save_photo.setClickable(true);
 
@@ -465,7 +371,6 @@ public class MainActivity extends BaseActivity implements CameraDialog.CameraDia
     @Override
     protected void onPause() {
         super.onPause();
-        Log.d(TAG, "una onpause " + save_photo.isEnabled());
         save_photo.setEnabled(false);
         save_photo.setClickable(false);
     }
@@ -500,7 +405,6 @@ public class MainActivity extends BaseActivity implements CameraDialog.CameraDia
         @Override
         protected void onPreExecute()
         {
-            Log.d(TAG, " onpreexecute");
             super.onPreExecute();
         }
 
@@ -509,22 +413,17 @@ public class MainActivity extends BaseActivity implements CameraDialog.CameraDia
             oldBmp = null;
             while (oldBmp == null){
                 oldBmp = mCameraHandler.getBitmap();
-                Log.d(TAG,"newBmp 111 " + oldBmp);
-                Log.d(TAG,"newBmp 11 " + newBmp);
-                if(oldBmp == null ){
-                       Log.d(TAG,"newBmp 44 " + newBmp);
+                if(oldBmp != null ){
                     if(!newBmp.equals(oldBmp)){
-//                        newBmp = oldBmp;
-                        Log.d(TAG,"newBmp 121 " + newBmp);
+                        newBmp = oldBmp;
                     }else{
-                        Log.d(TAG,"newBmp 22 " + newBmp);
                         oldBmp = null;
                     }
                 }
 //                newBmp = oldBmp;
-                Log.d(TAG,"newBmp 33 " + oldBmp + " newBmp " + newBmp);
             }
             return newBmp;
+
         }
 
         @Override
@@ -538,18 +437,6 @@ public class MainActivity extends BaseActivity implements CameraDialog.CameraDia
             }
 
         }
-    }
-
-    public void onEdit (View view)
-    {
-        Log.d(TAG, "onEdit");
-        Toast.makeText(this, " edit napindot mo", Toast.LENGTH_SHORT).show();
-    }
-
-    public void onPictureframe(View view)
-    {
-        Log.d(TAG, "onPictureframe");
-        Toast.makeText(this, " frame napindot mo", Toast.LENGTH_LONG).show();
     }
 
 }
