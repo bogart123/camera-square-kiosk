@@ -1,21 +1,6 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\10-09-17\\SquareCam\\usbCameraCommon\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\CTI OVS\\.gradle\\caches\\transforms-1\\files-1.1\\common-1.5.20.aar\\2a4e17dbf8a888e82c4f6c3317da9530\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,108,158",
-                        "endColumns": "52,49,49",
-                        "endOffsets": "103,153,203"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\FiMobile-JMK\\Desktop\\Camera Kiosk\\usbCameraCommon\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {

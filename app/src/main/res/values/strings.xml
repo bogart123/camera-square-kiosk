@@ -20,6 +20,8 @@
     <string name="camerakiosk_label_sticker">Sticker</string>
     <string name="camerakiosk_label_eraser">Eraser</string>
     <string name="camerakiosk_label_text">Text</string>
+    <string name="camerakiosk_encoder">encoder</string>
+
 
     <string-array name="camerakiosk_photo_editor_emoji">
 

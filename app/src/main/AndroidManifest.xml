@@ -42,7 +42,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:label="@string/encoder_app_name" android:name=".imageeditor.EditImageActivity"/>
+        <activity android:label="@string/camerakiosk_encoder" android:name=".imageeditor.EditImageActivity"/>
 
        <!-- <activity android:name=".RuntimePermissionActivity"
             >
